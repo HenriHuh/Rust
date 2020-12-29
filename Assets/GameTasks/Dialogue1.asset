@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3ed28e903a27c54cbbc5a9ec4271b14, type: 3}
   m_Name: Dialogue1
   m_EditorClassIdentifier: 
+  type: 1
   taskTime: 5
   dialogue: ???
   options: []
