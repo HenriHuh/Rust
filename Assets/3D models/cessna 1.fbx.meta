@@ -1,32 +1,8 @@
 fileFormatVersion: 2
-guid: 3418b6c596d822e468ae5d87a3c62879
+guid: 3697cd8a906a4a64ba0606740dbb1a8f
 ModelImporter:
   serializedVersion: 20101
-  internalIDToNameTable:
-  - first:
-      74: -3196294578857619385
-    second: tile 1|EmptyAction
-  - first:
-      74: -3541287874257974518
-    second: tile 1|EmptyAction.001
-  - first:
-      74: 4492786849516429677
-    second: tile 1|PlaneAction
-  - first:
-      74: -575409261769104627
-    second: tile 1|PlaneAction.001
-  - first:
-      74: 3092315135028179867
-    second: tile 2|EmptyAction
-  - first:
-      74: -3417767013595498876
-    second: tile 2|EmptyAction.001
-  - first:
-      74: 106034505889941869
-    second: tile 2|PlaneAction
-  - first:
-      74: -6468138286538511623
-    second: tile 2|PlaneAction.001
+  internalIDToNameTable: []
   externalObjects: {}
   materials:
     materialImportMode: 1
