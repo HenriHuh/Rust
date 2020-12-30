@@ -3,7 +3,57 @@ guid: 92564ad13e27b27419112719dcfb22a9
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: e7e4b12ef8c41b34a9d7d47a36ffb50f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aita
+    second: {fileID: 2100000, guid: 7f57512421b1f9645b84521554d4d2b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: haybale
+    second: {fileID: 2100000, guid: 94264526122e3844ba7b0b1026165dc1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ikkuina
+    second: {fileID: 2100000, guid: 7756d1fba1448c84ab736df5b04100c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: katto
+    second: {fileID: 2100000, guid: bef4f8935ea89774789da1174ea575a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leaves
+    second: {fileID: 2100000, guid: cf31173c792bbe848848d2637a0cfe33, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "lehm\xE4"
+    second: {fileID: 2100000, guid: 19f6271ccafbaf246a907700c7a87db6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "m\xF6kki"
+    second: {fileID: 2100000, guid: bbf9e49c8370b7346b5e2eaa2687e6ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pig
+    second: {fileID: 2100000, guid: 2cd69e1ea0b01c64c88ed42dd6f2f58a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tree
+    second: {fileID: 2100000, guid: 68e3cbd9e9078564da68e56b39b47057, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

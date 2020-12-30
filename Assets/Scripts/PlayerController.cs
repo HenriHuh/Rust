@@ -10,9 +10,11 @@ public class PlayerController : MonoBehaviour
 
     float targetRotation;
 
+    public static PlayerController instance;
+
     void Start()
     {
-        
+        instance = this;
     }
 
     void Update()
