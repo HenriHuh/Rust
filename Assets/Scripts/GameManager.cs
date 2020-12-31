@@ -9,11 +9,12 @@ public class GameManager : MonoBehaviour
     public List<LevelTask> levelTasks;
     public Transform cameraClosePosition, cameraFarPosition;
     public GameObject radarPrefab;
+    public Animator migAnimator;
 
     LevelTask currentTask;
     int currentTaskIndex;
     float timeToNextTask;
-
+    public int lives;
     void Start()
     {
         instance = this;
@@ -50,6 +51,18 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void RadarHit()
+    {
+        lives--;
+        if (lives <= 0)
+        {
+            //Game over
+        }
+        else
+        {
+            migAnimator.Play(0);
+        }
+    }
     public void NextTask()
     {
         if(currentTaskIndex >= levelTasks.Count)
