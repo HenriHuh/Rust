@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class MenuPlane : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        Vector3 v = transform.position;
+        v.y = Mathf.Sin(Time.time);
+        transform.position = v;
+        Quaternion rot = transform.rotation;
+        rot.x = Mathf.Sin(Time.time * 0.7f) * 0.1f;
+        transform.rotation = rot;
     }
 }

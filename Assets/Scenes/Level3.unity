@@ -636,6 +636,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: maskva
       objectReference: {fileID: 0}
+    - target: {fileID: 6685266466240092953, guid: 2c1b03914b679ef4f8ffbd891a11ba9b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 050e7bc0954867648b8699423582ea8e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c1b03914b679ef4f8ffbd891a11ba9b, type: 3}
 --- !u!4 &711563468 stripped
@@ -915,6 +919,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: maskva
       objectReference: {fileID: 0}
+    - target: {fileID: 6685266466240092953, guid: 2c1b03914b679ef4f8ffbd891a11ba9b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 050e7bc0954867648b8699423582ea8e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c1b03914b679ef4f8ffbd891a11ba9b, type: 3}
 --- !u!4 &1348884455 stripped
