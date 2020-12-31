@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public float timeBetweenTasks;
     public List<LevelTask> levelTasks;
     public Transform cameraClosePosition, cameraFarPosition;
+    public GameObject radarPrefab;
 
     LevelTask currentTask;
     int currentTaskIndex;
@@ -60,5 +61,29 @@ public class GameManager : MonoBehaviour
         timeToNextTask = levelTasks[currentTaskIndex].taskTime + timeBetweenTasks;
         currentTask = levelTasks[currentTaskIndex];
         currentTaskIndex++;
+    }
+
+    public void MakeRadars(int count, int openCount)
+    {
+        Vector3 radarPos = Vector3.zero;
+        radarPos.y = PlayerController.instance.transform.position.y;
+        radarPos.z = PlayerController.instance.transform.position.z + 50;
+        for (int i = 0; i < count; i++)
+        {
+            radarPos.z += 25;
+            InitRadar(radarPos, openCount, 15 + (i * 10));
+        }
+    }
+
+    void InitRadar(Vector3 pos, int openCount, float destroyTime)
+    {
+        List<Vector3> openPositions = Tools.GetGrid(1, 5);
+        for (int i = 0; i < 9 - openCount; i++)
+        {
+            int gridPos = Random.Range(0, openPositions.Count);
+            GameObject g = Instantiate(radarPrefab, pos + openPositions[gridPos], Quaternion.identity);
+            openPositions.RemoveAt(gridPos);
+            Destroy(g, destroyTime);
+        }
     }
 }
