@@ -3,7 +3,112 @@ guid: 2c1b03914b679ef4f8ffbd891a11ba9b
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Kremlin
+    second: {fileID: 2100000, guid: 14967d210c2481649a638b5b8134a9ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: f4dfc9dafa6fef04f92f719964f244c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bridge
+    second: {fileID: 2100000, guid: e0e8db1f42eb66f4f96a9411c42e7af8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: car glass
+    second: {fileID: 2100000, guid: 451e8d1ef3f0c624f851367ed69132e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: car tire
+    second: {fileID: 2100000, guid: d90bd3fc924973f40be6424545876220, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: car1
+    second: {fileID: 2100000, guid: 06c3028f0b8bea24e904e80e583158f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: car2_
+    second: {fileID: 2100000, guid: 650b7586f1a2c7244a2f6ea57344ec13, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: car3
+    second: {fileID: 2100000, guid: cc43ae609a57227419d140692e12bd4d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: city_ground
+    second: {fileID: 2100000, guid: 4b9c78eb8342f2c45b4d480582dd982f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dirt_path
+    second: {fileID: 2100000, guid: e6f0845f8efae6b4ba7175dc23fe4b25, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grass
+    second: {fileID: 2100000, guid: 0e2e6b206a5496a41b3a711145ca8471, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: havu
+    second: {fileID: 2100000, guid: 4fce6eecc1cc09e4ab351da3994be12f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: headlight
+    second: {fileID: 2100000, guid: 5acbc951f74a21a44bc22a66f44bc729, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kanto
+    second: {fileID: 2100000, guid: 63d90e5f410d6e842bf2b538a94219d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leaves
+    second: {fileID: 2100000, guid: cdf8ba73dad99c24a8d0c17cf229a8db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mausoleum
+    second: {fileID: 2100000, guid: 566f7718880a9764ea3a09efda0d83dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: river
+    second: {fileID: 2100000, guid: c444cd0dd1732024080d00a9f5a87684, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: road
+    second: {fileID: 2100000, guid: 050e7bc0954867648b8699423582ea8e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tree
+    second: {fileID: 2100000, guid: 2907bc34bc9c0f947993c2da2bac6dd6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall
+    second: {fileID: 2100000, guid: 3f1cb9bd4a585044e85c76b10f53e016, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall green
+    second: {fileID: 2100000, guid: 681b31ac7d0e8914795a48bdec55e2f3, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
