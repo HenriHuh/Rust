@@ -53,19 +53,19 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void RadarHit()
+    public void Hit()
     {
         if (invulnerable) return;
 
-        lives--;
         if (lives <= 0)
         {
-            //Game over
+            UIManager.instance.GameOver();
         }
         else
         {
-            migAnimator.Play(0);
+            migAnimator.SetTrigger("Flight");
         }
+        lives--;
         invulnerable = true;
         Invoke("Vulnerable", 1);
     }
@@ -79,7 +79,7 @@ public class GameManager : MonoBehaviour
     {
         if(currentTaskIndex >= levelTasks.Count)
         {
-            //Level finished
+            UIManager.instance.LevelFinished();
             return;
         }
         levelTasks[currentTaskIndex].StartTask();
@@ -88,10 +88,11 @@ public class GameManager : MonoBehaviour
         currentTaskIndex++;
     }
 
+
     public void MakeRadars(int count, int openCount)
     {
         Vector3 radarPos = Vector3.zero;
-        radarPos.y = PlayerController.instance.transform.position.y;
+        radarPos.y = 6;
         radarPos.z = PlayerController.instance.transform.position.z + 50;
         for (int i = 0; i < count; i++)
         {
