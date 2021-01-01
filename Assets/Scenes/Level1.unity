@@ -195,8 +195,8 @@ MonoBehaviour:
   cameraClosePosition: {fileID: 164779581}
   cameraFarPosition: {fileID: 967044452}
   radarPrefab: {fileID: 3270440704815313444, guid: 699c57e04dfc47449b827e9b4a13eb13, type: 3}
-  migAnimator: {fileID: 0}
-  lives: 0
+  migAnimator: {fileID: 1333797521}
+  lives: 2
 --- !u!4 &152860966
 Transform:
   m_ObjectHideFlags: 0
@@ -10518,6 +10518,7 @@ GameObject:
   - component: {fileID: 1309696510}
   - component: {fileID: 1309696511}
   - component: {fileID: 1309696512}
+  - component: {fileID: 1309696513}
   m_Layer: 0
   m_Name: Cessna
   m_TagString: Player
@@ -10565,11 +10566,27 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309696509}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 5, y: 0.5, z: 1}
   m_Center: {x: 0, y: 0.25, z: 0}
+--- !u!54 &1309696513
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309696509}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!4 &1326026674 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 92564ad13e27b27419112719dcfb22a9, type: 3}
