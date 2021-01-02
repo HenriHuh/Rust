@@ -12,6 +12,7 @@ public class UIManager : MonoBehaviour
     public GameObject screenGameOver;
     public GameObject screenFinish;
     public string nextScene;
+    public Text txtTimer;
 
     void Start()
     {
@@ -49,7 +50,7 @@ public class UIManager : MonoBehaviour
 
     public void LevelFinished()
     {
-        screenGameOver.SetActive(true);
+        screenFinish.SetActive(true);
     }
 
     public void Reload()
@@ -73,6 +74,7 @@ public class UIManager : MonoBehaviour
         HideOptions();
         Invoke("HideDialogue", 1.5f);
         GameManager.instance.NextTask();
+        SoundManager.instance.PlaySound(SoundManager.instance.click);
     }
 
     void IncorrectOption()
@@ -81,6 +83,7 @@ public class UIManager : MonoBehaviour
         HideOptions();
         Invoke("HideDialogue", 1.5f);
         GameManager.instance.Hit();
+        SoundManager.instance.PlaySound(SoundManager.instance.click);
     }
 
     void HideDialogue()

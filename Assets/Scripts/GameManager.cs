@@ -10,21 +10,34 @@ public class GameManager : MonoBehaviour
     public Transform cameraClosePosition, cameraFarPosition;
     public GameObject radarPrefab;
     public Animator migAnimator;
-
+    public bool endless;
+    
     LevelTask currentTask;
     int currentTaskIndex;
     float timeToNextTask;
     public int lives;
     bool invulnerable;
-
+    float timer = 0;
+    bool gameOver;
     void Start()
     {
         instance = this;
+        if (SoundManager.soundOn) SoundManager.instance.motor.volume = 0.5f;
         timeToNextTask = timeBetweenTasks;
     }
 
     void Update()
     {
+        if (gameOver)
+        {
+            return;
+        }
+        if (endless)
+        {
+            UIManager.instance.txtTimer.text = ((int)timer).ToString();
+            timer += Time.deltaTime;
+        }
+
         timeToNextTask -= Time.deltaTime;
         if(timeToNextTask < 0)
         {
@@ -60,6 +73,7 @@ public class GameManager : MonoBehaviour
         if (lives <= 0)
         {
             UIManager.instance.GameOver();
+            gameOver = true;
         }
         else
         {
@@ -77,15 +91,19 @@ public class GameManager : MonoBehaviour
 
     public void NextTask()
     {
+
         if(currentTaskIndex >= levelTasks.Count)
         {
+            Debug.Log("WIN");
+            currentTask = null;
             UIManager.instance.LevelFinished();
+            timeToNextTask = Mathf.Infinity;
             return;
         }
         levelTasks[currentTaskIndex].StartTask();
         timeToNextTask = levelTasks[currentTaskIndex].taskTime + timeBetweenTasks;
         currentTask = levelTasks[currentTaskIndex];
-        currentTaskIndex++;
+        if(!endless) currentTaskIndex++;
     }
 
 
