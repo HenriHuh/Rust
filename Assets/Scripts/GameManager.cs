@@ -9,10 +9,13 @@ public class GameManager : MonoBehaviour
     public List<LevelTask> levelTasks;
     public Transform cameraClosePosition, cameraFarPosition;
     public GameObject radarPrefab;
+    public Animator migAnimator;
 
     LevelTask currentTask;
     int currentTaskIndex;
     float timeToNextTask;
+    public int lives;
+    bool invulnerable;
 
     void Start()
     {
@@ -50,6 +53,28 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void RadarHit()
+    {
+        if (invulnerable) return;
+
+        lives--;
+        if (lives <= 0)
+        {
+            //Game over
+        }
+        else
+        {
+            migAnimator.Play(0);
+        }
+        invulnerable = true;
+        Invoke("Vulnerable", 1);
+    }
+
+    void Vulnerable()
+    {
+        invulnerable = false;
+    }
+
     public void NextTask()
     {
         if(currentTaskIndex >= levelTasks.Count)
@@ -70,7 +95,7 @@ public class GameManager : MonoBehaviour
         radarPos.z = PlayerController.instance.transform.position.z + 50;
         for (int i = 0; i < count; i++)
         {
-            radarPos.z += 25;
+            radarPos.z += 30;
             InitRadar(radarPos, openCount, 15 + (i * 10));
         }
     }

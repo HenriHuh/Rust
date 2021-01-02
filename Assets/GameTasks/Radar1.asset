@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Radar1
   m_EditorClassIdentifier: 
   type: 0
-  taskTime: 5
+  taskTime: 10
   radarCount: 3
   openCount: 3
