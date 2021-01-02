@@ -372,7 +372,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 2.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -381,7 +381,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.25
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -429,7 +429,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207113680}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: -3.34, y: 20.93, z: -7.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -915,6 +915,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 882129737928793925, guid: 2c1b03914b679ef4f8ffbd891a11ba9b, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0a874e9aac375bf4da2f65fbeeffcf01, type: 2}
     - target: {fileID: 919132149155446097, guid: 2c1b03914b679ef4f8ffbd891a11ba9b, type: 3}
       propertyPath: m_Name
       value: maskva
@@ -5939,6 +5943,8 @@ MonoBehaviour:
   cameraClosePosition: {fileID: 1778596343}
   cameraFarPosition: {fileID: 920447023}
   radarPrefab: {fileID: 3270440704815313444, guid: 699c57e04dfc47449b827e9b4a13eb13, type: 3}
+  migAnimator: {fileID: 0}
+  lives: 0
 --- !u!4 &1920607537
 Transform:
   m_ObjectHideFlags: 0

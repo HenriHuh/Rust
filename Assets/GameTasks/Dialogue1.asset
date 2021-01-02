@@ -14,5 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   taskTime: 5
-  dialogue: ???
-  options: []
+  dialogue: What are you doing!?
+  options:
+  - isCorrect: 0
+    option: Flying
+  - isCorrect: 1
+    option: Achtung!
+  - isCorrect: 0
+    option: Nothing
