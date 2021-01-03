@@ -13,7 +13,7 @@ public class UIManager : MonoBehaviour
     public GameObject screenFinish;
     public string nextScene;
     public Text txtTimer;
-
+    public Image overlay;
     void Start()
     {
         instance = this;
@@ -46,8 +46,23 @@ public class UIManager : MonoBehaviour
     public void GameOver()
     {
         screenGameOver.SetActive(true);
+        StartCoroutine(Fade());
     }
 
+    IEnumerator Fade()
+    {
+        float t = 0;
+        Color clr = Color.black;
+        while (t < 1)
+        {
+            clr.a = t;
+            overlay.color = clr;
+            t += Time.deltaTime;
+            yield return null;
+        }
+        overlay.color = Color.black;
+        yield return null;
+    }
     public void LevelFinished()
     {
         screenFinish.SetActive(true);

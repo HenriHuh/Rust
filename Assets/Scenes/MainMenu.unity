@@ -942,7 +942,7 @@ MonoBehaviour:
   crash: {fileID: 8300000, guid: 7e6d23ed3a31e7643939aec65b30c92e, type: 3}
   splash: {fileID: 8300000, guid: 98cfc501e15e5554196b1747d31d1c7c, type: 3}
   failMusic: {fileID: 0}
-  mig: {fileID: 0}
+  mig: {fileID: 8300000, guid: 5f72cec1abfd88942ab385b7b25cec18, type: 3}
   win: {fileID: 0}
   click: {fileID: 8300000, guid: db7c462395d23874aa9f3918a8bb7447, type: 3}
 --- !u!82 &1186125898

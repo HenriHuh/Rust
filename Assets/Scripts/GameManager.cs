@@ -72,11 +72,20 @@ public class GameManager : MonoBehaviour
         if (lives <= 0)
         {
             UIManager.instance.GameOver();
+            if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Level2")
+            {
+                SoundManager.instance.PlaySound(SoundManager.instance.splash);
+            }
+            else
+            {
+                SoundManager.instance.PlaySound(SoundManager.instance.crash);
+            }
             gameOver = true;
         }
         else
         {
             migAnimator.SetTrigger("Flight");
+            SoundManager.instance.PlaySound(SoundManager.instance.mig, 0.27f);
         }
         lives--;
         invulnerable = true;

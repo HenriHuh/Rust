@@ -18,8 +18,8 @@ MonoBehaviour:
     and will fire immediately after a radar sighting. Good luck!
   options:
   - isCorrect: 0
-    option: Achtung!
+    option: Okay!
   - isCorrect: 0
-    option: No can do!
+    option: Thanks!
   - isCorrect: 1
     option: Turn off radio

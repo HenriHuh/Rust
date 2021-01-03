@@ -25,6 +25,7 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
+        SoundManager.instance.source.Stop();
         SoundManager.instance.PlaySound(SoundManager.instance.click);
         SceneManager.LoadScene("Level1");
 

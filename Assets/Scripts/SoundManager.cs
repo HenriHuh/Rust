@@ -7,7 +7,7 @@ public class SoundManager : MonoBehaviour
     public static SoundManager instance;
 
     public static bool soundOn = true;
-    AudioSource source;
+    [HideInInspector] public AudioSource source;
     public AudioSource motor;
 
 
@@ -32,6 +32,11 @@ public class SoundManager : MonoBehaviour
     public void PlaySound(AudioClip clip)
     {
         source.PlayOneShot(clip);
+    }
+
+    public void PlaySound(AudioClip clip, float vol)
+    {
+        source.PlayOneShot(clip, vol);
     }
 
     public void SetSound(ref string onString)
