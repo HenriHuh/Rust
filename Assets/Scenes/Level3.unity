@@ -12872,7 +12872,6 @@ MonoBehaviour:
   timeBetweenTasks: 0
   levelTasks:
   - {fileID: 11400000, guid: 1a332cabe2b048b4e9a1e82bcb9bd682, type: 2}
-  - {fileID: 11400000, guid: f908c5bc3bd3fd442823e0de44e36ea1, type: 2}
   - {fileID: 11400000, guid: 1a332cabe2b048b4e9a1e82bcb9bd682, type: 2}
   cameraClosePosition: {fileID: 1778596343}
   cameraFarPosition: {fileID: 920447023}

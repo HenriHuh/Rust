@@ -401,12 +401,12 @@ MonoBehaviour:
   timeBetweenTasks: 0
   levelTasks:
   - {fileID: 11400000, guid: 8090ece54af9fed46bb0b49f6099b638, type: 2}
-  - {fileID: 11400000, guid: f908c5bc3bd3fd442823e0de44e36ea1, type: 2}
   - {fileID: 11400000, guid: 8090ece54af9fed46bb0b49f6099b638, type: 2}
   cameraClosePosition: {fileID: 164779581}
   cameraFarPosition: {fileID: 967044452}
   radarPrefab: {fileID: 3270440704815313444, guid: 699c57e04dfc47449b827e9b4a13eb13, type: 3}
   migAnimator: {fileID: 1333797521}
+  endless: 0
   lives: 2
 --- !u!4 &152860966
 Transform:
@@ -810,6 +810,7 @@ MonoBehaviour:
   screenGameOver: {fileID: 57147623}
   screenFinish: {fileID: 1132505310}
   nextScene: Level3
+  txtTimer: {fileID: 0}
 --- !u!1 &223879526
 GameObject:
   m_ObjectHideFlags: 0
