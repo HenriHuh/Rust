@@ -401,6 +401,7 @@ MonoBehaviour:
   timeBetweenTasks: 0
   levelTasks:
   - {fileID: 11400000, guid: 97c883fd5cf92a84c9be1a4a7a8d8790, type: 2}
+  - {fileID: 11400000, guid: f908c5bc3bd3fd442823e0de44e36ea1, type: 2}
   - {fileID: 11400000, guid: 97c883fd5cf92a84c9be1a4a7a8d8790, type: 2}
   cameraClosePosition: {fileID: 164779581}
   cameraFarPosition: {fileID: 967044452}
@@ -13060,7 +13061,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 140}
-  m_SizeDelta: {x: 400, y: 60}
+  m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2040709090
 MonoBehaviour:
@@ -13090,7 +13091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8301887, g: 0.08928439, b: 0.08928439, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -13099,7 +13100,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: b060acf6878d356469f44ed489ac12ee, type: 3}
-    m_FontSize: 30
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0

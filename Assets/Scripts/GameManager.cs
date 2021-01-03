@@ -22,8 +22,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         instance = this;
-        if (SoundManager.soundOn) SoundManager.instance.motor.volume = 0.5f;
         timeToNextTask = timeBetweenTasks;
+        if (SoundManager.soundOn) SoundManager.instance.motor.volume = 0.5f;
     }
 
     void Update()
@@ -50,7 +50,6 @@ public class GameManager : MonoBehaviour
     void PlayTask()
     {
         if (currentTask == null) return;
-
         switch (currentTask.type)
         {
             case LevelTask.Type.Radar:
@@ -92,9 +91,13 @@ public class GameManager : MonoBehaviour
     public void NextTask()
     {
 
+        if(currentTask != null && currentTask.type == LevelTask.Type.Dialogue)
+        {
+            UIManager.instance.HideUI();
+        }
+
         if(currentTaskIndex >= levelTasks.Count)
         {
-            Debug.Log("WIN");
             currentTask = null;
             UIManager.instance.LevelFinished();
             timeToNextTask = Mathf.Infinity;

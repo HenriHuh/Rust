@@ -68,9 +68,9 @@ public class UIManager : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
-    void CorrectOption()
+    public void CorrectOption()
     {
-        txtDialogue.text = "Carry on then...";
+        txtDialogue.text = "";
         HideOptions();
         Invoke("HideDialogue", 1.5f);
         GameManager.instance.NextTask();
@@ -79,11 +79,17 @@ public class UIManager : MonoBehaviour
 
     void IncorrectOption()
     {
-        txtDialogue.text = "That is incorrect!";
+        txtDialogue.text = "Turn back!";
+        GameManager.instance.Hit();
         HideOptions();
         Invoke("HideDialogue", 1.5f);
-        GameManager.instance.Hit();
         SoundManager.instance.PlaySound(SoundManager.instance.click);
+    }
+
+    public void HideUI()
+    {
+        HideOptions();
+        Invoke("HideDialogue", 1.5f);
     }
 
     void HideDialogue()

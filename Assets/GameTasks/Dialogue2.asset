@@ -10,18 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3ed28e903a27c54cbbc5a9ec4271b14, type: 3}
-  m_Name: Dialogue1
+  m_Name: Dialogue2
   m_EditorClassIdentifier: 
   type: 1
-  taskTime: 12
-  dialogue: Please change your course as that is a crowded commercial airspace. The
-    Russians also monitor the Baltic airspace with their radars and patrolling Mig-23
-    fighter aircraft. Beware closing in on their borders as they are known to shoot
-    down foreign aircraft without proper identification.
+  taskTime: 10
+  dialogue: Now that you have ventured into Soviet Russian territory, they will shoot
+    you down after a Mig has done an intercept flight following a radar sighting.
+    Watch out for those SAM missiles!
   options:
-  - isCorrect: 0
-    option: Roger that
   - isCorrect: 1
     option: Turn off radio
   - isCorrect: 0
-    option: Whatever!
+    option: Okay!
