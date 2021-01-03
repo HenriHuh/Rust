@@ -14,6 +14,8 @@ public class UIManager : MonoBehaviour
     public string nextScene;
     public Text txtTimer;
     public Image overlay;
+    public Animator endAnim;
+
     void Start()
     {
         instance = this;
@@ -65,7 +67,15 @@ public class UIManager : MonoBehaviour
     }
     public void LevelFinished()
     {
-        screenFinish.SetActive(true);
+        if (SceneManager.GetActiveScene().name == "Level3")
+        {
+            endAnim.gameObject.SetActive(true);
+            Invoke("NextLevelForce", 5f);
+        }
+        else
+        {
+            screenFinish.SetActive(true);
+        }
     }
 
     public void Reload()
@@ -76,6 +86,11 @@ public class UIManager : MonoBehaviour
     public void NextLevel()
     {
         SceneManager.LoadScene(nextScene);
+    }
+
+    void NextLevelForce()
+    {
+        screenFinish.SetActive(true);
     }
 
     public void MainMenu()

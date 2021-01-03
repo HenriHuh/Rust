@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
 
     public void Hit()
     {
-        if (invulnerable) return;
+        if (invulnerable || gameOver) return;
 
         if (lives <= 0)
         {

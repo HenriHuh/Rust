@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue2
   m_EditorClassIdentifier: 
   type: 1
-  taskTime: 10
+  taskTime: 12
   dialogue: Now that you have ventured into Soviet Russian territory, they will shoot
     you down after a Mig has done an intercept flight following a radar sighting.
     Watch out for those SAM missiles!

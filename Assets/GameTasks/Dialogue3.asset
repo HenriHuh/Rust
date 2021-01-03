@@ -13,13 +13,9 @@ MonoBehaviour:
   m_Name: Dialogue3
   m_EditorClassIdentifier: 
   type: 1
-  taskTime: 10
+  taskTime: 12
   dialogue: The anti-air missile installations around Moscow are now on full alert
     and will fire immediately after a radar sighting. Good luck!
   options:
-  - isCorrect: 0
-    option: Okay!
-  - isCorrect: 0
-    option: Thanks!
   - isCorrect: 1
     option: Turn off radio

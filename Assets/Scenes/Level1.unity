@@ -400,8 +400,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBetweenTasks: 0
   levelTasks:
-  - {fileID: 11400000, guid: 97c883fd5cf92a84c9be1a4a7a8d8790, type: 2}
   - {fileID: 11400000, guid: f908c5bc3bd3fd442823e0de44e36ea1, type: 2}
+  - {fileID: 11400000, guid: 97c883fd5cf92a84c9be1a4a7a8d8790, type: 2}
   - {fileID: 11400000, guid: 97c883fd5cf92a84c9be1a4a7a8d8790, type: 2}
   cameraClosePosition: {fileID: 164779581}
   cameraFarPosition: {fileID: 967044452}
@@ -814,6 +814,7 @@ MonoBehaviour:
   nextScene: Level2
   txtTimer: {fileID: 0}
   overlay: {fileID: 564345638}
+  endAnim: {fileID: 0}
 --- !u!1 &223879526
 GameObject:
   m_ObjectHideFlags: 0
