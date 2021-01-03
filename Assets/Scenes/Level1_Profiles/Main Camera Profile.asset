@@ -18,10 +18,10 @@ MonoBehaviour:
     value: 1
   shutterAngle:
     overrideState: 1
-    value: 270
+    value: 145
   sampleCount:
     overrideState: 1
-    value: 10
+    value: 21
 --- !u!114 &-6625556454307998825
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -43,7 +43,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0
+    value: 4
   color:
     overrideState: 1
     value: {r: 0, g: 0, b: 0, a: 1}
@@ -61,10 +61,10 @@ MonoBehaviour:
     value: -12
   thicknessModifier:
     overrideState: 1
-    value: 1
+    value: 10
   directLightingStrength:
     overrideState: 1
-    value: 0
+    value: 0.974
   radius:
     overrideState: 0
     value: 0.25
@@ -124,28 +124,28 @@ MonoBehaviour:
     value: 1
   temperature:
     overrideState: 0
-    value: 0
+    value: -0
   tint:
     overrideState: 0
     value: 0
   colorFilter:
-    overrideState: 0
+    overrideState: 1
     value: {r: 1, g: 1, b: 1, a: 1}
   hueShift:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: -180
   saturation:
-    overrideState: 0
-    value: 65
+    overrideState: 1
+    value: -99
   brightness:
     overrideState: 0
     value: 0
   postExposure:
-    overrideState: 0
+    overrideState: 1
     value: 0
   contrast:
-    overrideState: 0
-    value: 16
+    overrideState: 1
+    value: -35
   mixerRedOutRedIn:
     overrideState: 0
     value: 100
