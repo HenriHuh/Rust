@@ -6,9 +6,9 @@ using UnityEngine;
 public class RadarTask : LevelTask
 {
     public int radarCount;
-
+    public int openCount;
     public override void StartTask()
     {
-        //Generate radars on the map
+        GameManager.instance.MakeRadars(radarCount, openCount);
     }
 }

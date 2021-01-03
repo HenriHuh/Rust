@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8062607c85303e48b425f3eac66006d, type: 3}
   m_Name: Radar1
   m_EditorClassIdentifier: 
-  taskTime: 5
+  type: 0
+  taskTime: 12
   radarCount: 3
+  openCount: 3

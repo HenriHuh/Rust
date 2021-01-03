@@ -13,6 +13,15 @@ MonoBehaviour:
   m_Name: Dialogue1
   m_EditorClassIdentifier: 
   type: 1
-  taskTime: 5
-  dialogue: ???
-  options: []
+  taskTime: 12
+  dialogue: Please change your course as that is a crowded commercial airspace. The
+    Russians also monitor the Baltic airspace with their radars and patrolling Mig-23
+    fighter aircraft. Beware closing in on their borders as they are known to shoot
+    down foreign aircraft without proper identification.
+  options:
+  - isCorrect: 0
+    option: Roger that
+  - isCorrect: 1
+    option: Turn off radio
+  - isCorrect: 0
+    option: Whatever!

@@ -11,6 +11,7 @@ public class DialogueTask : LevelTask
 
     public override void StartTask()
     {
+        UIManager.instance.Dialogue(dialogue, options);
         //Start UIManager thing
     }
 }
